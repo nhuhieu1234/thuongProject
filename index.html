@@ -57,15 +57,15 @@
             <div class="introduce_img">
               <div class="introduce_img-wrp">
                 <div class="introduce_main-img">
-                  <img class="board" src="assets/img/Board.png" alt="">
-                  <!-- <img class="board1" src="images/board1.png" alt="">
-                  <img class="board2" src="images/board2.png" alt="">
-                  <img class="board3" src="images/board1.png" alt=""> -->
+                  <img class="board introduce_main-item" src="assets/img/Board.png" alt="">
+                  <img class="board1 introduce_main-item introduce_img-hidden" src="assets/img/board1.png" alt="">
+                  <img class="board2 introduce_main-item introduce_img-hidden" src="assets/img/board2.png" alt="">
+                  <img class="board3 introduce_main-item introduce_img-hidden" src="assets/img/board1.png" alt="">
                 </div>
     
                 <ul class="introduce_other-img">
                   <li id="board" class="active"><img src="assets/img/Photo.png" alt=""></li>
-                  <li id="board1"><img src="assets/img/Photo1.png" alt=""></li>
+                  <li id="board1" ><img src="assets/img/Photo1.png" alt=""></li>
                   <li id="board2"><img src="assets/img/Photo2.png" alt=""></li>
                   <li id="board3"><img src="assets/img/Photo3.png" alt=""></li>
                 </ul>
@@ -89,9 +89,9 @@
   
                 <div class="introduce_menu">
                   <ul class="introduce_list">
-                    <li id="description" class="active">Description</li>
-                    <li id="feature">Features</li>
-                    <li id="dimension">Dimensions</li>
+                    <li class="introduce_tabs-item active" id="description"><a  title=""><i class="fa fa-pencil"></i>Description</a></li>
+                    <li class="introduce_tabs-item" id="feature"><a  title=""><i class="fa fa-linode"></i>Features</a></li>
+                    <li class="introduce_tabs-item" id="dimension"><a  title=""><i class="fa fa-thermometer-quarter "></i>Dimensions</a></li>
                   </ul>
   
                   <div class="introduce_change-txt">
@@ -108,7 +108,7 @@
 
                 <div class="introduce_payments">
                   <span>$499.99</span>
-                  <a href="/" title="" class="btn btn-blue">Buy now</a>
+                  <a href="/" title="" class="btn btn-blue"><i class="fa fa-shopping-cart"></i>Buy now</a>
                 </div>
 
                 <div class="introduce_view-more">
@@ -141,16 +141,14 @@
     
   </footer>   
   <!-- script -->
-  <script src="js/tabs.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="js/tabs-images.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="js/video.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="js/slide.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="assets/js/tabs.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="assets/js/tabs-images.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="assets/js/video.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="assets/js/slide.js" type="text/javascript" charset="utf-8" async defer></script>
   <script>
     var active = false;
 
-    $('.menu_toggle').click(function(){
-       // active = true;
-       
+    $('.menu_toggle').click(function(){ 
         active = !active;
         console.log(active);
         if(active) {
