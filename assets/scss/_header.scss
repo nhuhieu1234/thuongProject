@@ -6,6 +6,7 @@ $height-nav: 80px;
 		position: fixed;
 		width: 100%;
 	}
+	
 	.menu {
 		&_wrp {
 			display: flex;
@@ -137,7 +138,7 @@ $height-nav: 80px;
 	}
 
 	.introduce {
-		padding-top: $height-nav;
+		padding: $height-nav 0;
 		background: url(../img/Hero.png) no-repeat;
 		background-size: cover;
 		@include breakpoint(tablet) {
@@ -355,15 +356,7 @@ $height-nav: 80px;
 		}
 
 		&_view-more {
-			display: inline-block;
-			padding-bottom: 5px;
-			border-bottom: 2px solid #00b0ff;
-			a {
-				color:  #00b0ff;
-				font-family: Montserrat;
-				font-weight: 400;
-				font-size: 16px;
-			}
+			
 		}
 		&_tabs {
 			position: absolute;

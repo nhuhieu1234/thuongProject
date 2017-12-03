@@ -1,6 +1,9 @@
 a {
   text-decoration: none; }
 
+a, button {
+  outline: 0; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +29,16 @@ a {
   .btn-blue {
     color: #ffffff;
     background-color: #00b0ff; }
+
+.view-more {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00b0ff; }
+  .view-more a {
+    color: #00b0ff;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px; }
 
 #header nav {
   background: rgba(255, 255, 255, 0.55);
@@ -137,7 +150,7 @@ a {
       color: #c2c2c2; }
 
 #header .introduce {
-  padding-top: 80px;
+  padding: 80px 0;
   background: url(../img/Hero.png) no-repeat;
   background-size: cover; }
   @media (max-width: 991px) {
@@ -295,15 +308,6 @@ a {
         margin-top: 5%;
         margin-right: 15px;
         display: inline-block; } }
-  #header .introduce_view-more {
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #00b0ff; }
-    #header .introduce_view-more a {
-      color: #00b0ff;
-      font-family: Montserrat;
-      font-weight: 400;
-      font-size: 16px; }
   #header .introduce_tabs {
     position: absolute;
     top: 50px;
@@ -329,3 +333,120 @@ a {
     color: #fff;
     padding: 12px;
     display: inline-block; }
+
+.about-us {
+  position: relative;
+  padding: 80px 0; }
+  .about-us_wrp {
+    background: url(../img/overlay.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 530px; }
+    @media (max-width: 991px) {
+      .about-us_wrp {
+        height: auto;
+        background: transparent; } }
+  .about-us_title {
+    font-size: 117px;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1; }
+    @media (max-width: 1199px) {
+      .about-us_title {
+        font-size: 90px;
+        top: -63px; } }
+    @media (max-width: 991px) {
+      .about-us_title {
+        position: unset;
+        font-size: 50px;
+        margin-bottom: 3%; } }
+  .about-us_ctn {
+    position: absolute;
+    bottom: -60px; }
+    @media (max-width: 991px) {
+      .about-us_ctn {
+        position: unset; } }
+  .about-us_ctn-wrp {
+    display: flex; }
+    @media (max-width: 991px) {
+      .about-us_ctn-wrp {
+        flex-direction: column-reverse; } }
+  .about-us_txt {
+    background: #ffffff;
+    display: flex;
+    width: 45%; }
+    @media (max-width: 1199px) {
+      .about-us_txt {
+        width: 55%; } }
+    @media (max-width: 991px) {
+      .about-us_txt {
+        width: 100%; } }
+  .about-us_txt-wrp {
+    padding: 8% 10% 3% 50%; }
+    @media (max-width: 991px) {
+      .about-us_txt-wrp {
+        padding: 15px; } }
+  .about-us_txt-title {
+    font-family: Montserrat;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px; }
+  .about-us_underline {
+    text-align: center;
+    margin-bottom: 15px; }
+  .about-us_txt-ctn {
+    font-family: PlayfairDisplay;
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px; }
+  .about-us_txt-wrap {
+    width: 50%;
+    padding: 5%;
+    padding-left: 50%;
+    padding-top: 13%; }
+  .about-us_clip {
+    align-self: flex-end;
+    position: relative;
+    margin-left: 2%;
+    box-shadow: 10px 24px 51px rgba(88, 88, 88, 0.56);
+    height: 200px; }
+    @media (max-width: 1199px) {
+      .about-us_clip {
+        align-self: center; } }
+    @media (max-width: 991px) {
+      .about-us_clip {
+        margin: 0;
+        width: 100%;
+        box-shadow: unset;
+        margin-bottom: 2%; } }
+    .about-us_clip video {
+      height: 100%; }
+      @media (max-width: 991px) {
+        .about-us_clip video {
+          width: 100%; } }
+  .about-us_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 50%; }
+    .about-us_play button {
+      background: none;
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 13px;
+      border-radius: 50%;
+      margin: 15px; }
+      .about-us_play button i {
+        font-size: 25px; }
